@@ -30,8 +30,8 @@
 
             var map, marker_me, marker_you;
 
-            var WUHAN = new google.maps.LatLng(30.511843, 114.45591),
-                PORTUGAL = new google.maps.LatLng(40.207312, -8.425645);
+            var HANOI = new google.maps.LatLng(21.074177, 105.7012327),
+                NGHEAN = new google.maps.LatLng(18.9155482, 105.279758);
 
             var DEFAULT_CENTER = new google.maps.LatLng(29.075375, 60.46875),
                 HEART_ISLAND = new google.maps.LatLng(43.978549,15.383574);
@@ -83,7 +83,7 @@
             function willYouLoveMeForever(){
                 window.my_infowindow = new google.maps.InfoWindow({
                     content: "I will love you forever, will you?",
-                    position: WUHAN
+                    position: HANOI
                 });
                 my_infowindow.open(map);
 
@@ -94,7 +94,7 @@
                              '</select>' +
                              '<input type="button" value="submit" ' +
                              'onclick="my_infowindow.close();your_infowindow.close();theEnd();" />',
-                    position: PORTUGAL
+                    position: NGHEAN
                 });
                 setTimeout(function(){
                     your_infowindow.open(map);
@@ -193,14 +193,14 @@
                 });
 
                 marker_me = new google.maps.Marker({ 
-                    position: WUHAN,    
+                    position: HANOI,    
                     title: "me", 
                     icon: "http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png",
                     animation: google.maps.Animation.DROP,
                     map: map 
                 });
                 marker_you = new google.maps.Marker({ 
-                    position: PORTUGAL, 
+                    position: NGHEAN, 
                     title: "you", 
                     icon: "http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png",
                     animation: google.maps.Animation.DROP,
